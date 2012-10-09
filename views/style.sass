@@ -1,0 +1,336 @@
+$left_col_width: 170px
+$right_col_width: 170px
+
+$padding: 15px
+
+#header
+  height: 54px
+  margin: 0 auto 36px
+  position: relative
+  font-size: 20px
+  font-weight: bold
+  color: #ffffff
+
+#footer
+  background: -webkit-gradient(linear, left top, left bottom,color-stop(0, #c3d9ff), color-stop(1, #97b0d9)) 
+  background: -moz-linear-gradient(top,#c3d9ff 0%, #97b0d9 100%) 
+  border: 1px solid #999999
+  -webkit-box-shadow: 1px 1px 1px #ccc
+  -moz-box-shadow: 1px 1px 1px #ccc
+  -webkit-text-shadow: 1px 1px 1px #ccc
+  -moz-text-shadow: 1px 1px 1px #ccc
+  -webkit-border-radius: 3px
+  -moz-border-radius: 3px
+  background-color: #ffffff
+
+#socialbuttons-wrapper
+  display: block
+
+#colmask.three-column
+  position: relative
+  clear: both
+  float: left
+  width: 100%
+  overflow: hidden
+  #colmid
+    float: left
+    width: 200%
+    position: relative
+    left: ($left_col_width + $padding + $padding)
+  #colright
+    float: left
+    width: 100%
+    position: relative
+    left: 50%
+    margin-left: -1 * ($left_col_width + $padding + $padding + $right_col_width + $padding + $padding)
+  #col1wrap
+    float: right
+    width: 50%
+    position: relative
+    right: 100%
+  #col1pad
+    margin: 0 $padding 0 ($left_col_width + $padding + $padding + $right_col_width + $padding + $padding)
+    overflow: hidden
+  #col1
+    width: 100%
+    overflow: hidden
+  #col2
+    float: left
+    width: $left_col_width
+    position: relative
+    margin-left: -50%
+    left: 215px
+    overflow: hidden
+  #col3
+    float: left
+    width: $right_col_width
+    position: relative
+    left: 15px
+    overflow: hidden
+
+
+*
+  /* Universal reset:
+  margin: 0
+  padding: 0
+
+header, footer, article, section, hgroup, nav, figure
+  /* Giving a display value to the HTML5 rendered elements:
+  display: block
+
+body
+  /* Setting the default text color, size, page background and a font stack:
+  font-size: 0.825em
+  color: #fcfcfc
+  background-color: 'white'
+  font-family: Arial, Helvetica, sans-serif
+
+/* Hyperlink Styles:
+
+a
+  color: #0196e3
+  text-decoration: none
+  outline: none
+  &:visited
+    color: #0196e3
+    text-decoration: none
+    outline: none
+  &:hover
+    text-decoration: underline
+  img
+    border: none
+
+/* Headings:
+
+h1, h2, h3
+  font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif
+  text-shadow: 0 1px 1px black
+
+h1
+  /* The logo text
+  font-size: 3.5em
+  padding: 0.5em 0 0
+  text-transform: uppercase
+  a
+    color: #ffffff
+    &:visited
+      color: #ffffff
+
+h3
+  /* The slogan text
+  font-family: forte,"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif
+  font-size: 2em
+  font-weight: normal
+  margin: 0 0 1em
+
+h2
+  font-size: 2.2em
+  font-weight: normal
+  letter-spacing: 0.01em
+  text-transform: uppercase
+
+p
+  line-height: 1.5em
+  padding-bottom: 1em
+
+.line
+  /* The dividing line:
+  height: 1px
+  background-color: #24404c
+  border-bottom: 1px solid #416371
+  margin: 1em 0
+  overflow: hidden
+
+article .line
+  /* The dividing line inside of the article is darker:
+  background-color: #15242a
+  border-bottom-color: #204656
+  margin: 1.3em 0
+
+footer .line
+  margin: 2em 0
+
+nav
+  background: url(img/gradient_light.jpg) repeat-x 50% 50% #f8f8f8
+  padding: 0 5px
+  position: absolute
+  right: 0
+  top: 4em
+  border: 1px solid #FCFCFC
+  -moz-box-shadow: 0 1px 1px #333333
+  -webkit-box-shadow: 0 1px 1px #333333
+  box-shadow: 0 1px 1px #333333
+
+/* The clearfix hack to clear the floats:
+
+.clear:after
+  content: "."
+  display: block
+  height: 0
+  clear: both
+  visibility: hidden
+
+/* The navigation styling:
+
+nav
+  ul li
+    display: inline
+    a
+      color: #565656
+      display: block
+      float: left
+      font-size: 1.25em
+      font-weight: bold
+      margin: 5px 2px
+      padding: 7px 10px 4px
+      text-shadow: 0 1px 1px white
+      text-transform: uppercase
+      &:visited
+        color: #565656
+        display: block
+        float: left
+        font-size: 1.25em
+        font-weight: bold
+        margin: 5px 2px
+        padding: 7px 10px 4px
+        text-shadow: 0 1px 1px white
+        text-transform: uppercase
+      &:hover
+        text-decoration: none
+        background-color: #f0f0f0
+  /* Applying CSS3 rounded corners:
+  -moz-border-radius: 10px
+  -webkit-border-radius: 10px
+  border-radius: 10px
+
+article, nav ul li a, figure
+  /* Applying CSS3 rounded corners:
+  -moz-border-radius: 10px
+  -webkit-border-radius: 10px
+  border-radius: 10px
+
+/* Article styles:
+
+#page
+  width: 640px
+  margin: 0 auto
+  position: relative
+
+article
+  background-color: #565656
+  /*#213E4A
+  margin: 3em 0
+  padding: 20px
+  text-shadow: 0 2px 0 black
+
+figure
+  border: 3px solid #142830
+  float: right
+  height: 220px
+  margin-left: 0px
+  overflow: hidden
+  width: 220px
+  background-color: #ffffff
+  &:hover
+    -moz-box-shadow: 0 0 2px #4D7788
+    -webkit-box-shadow: 0 0 2px #4D7788
+    box-shadow: 0 0 2px #4D7788
+  img
+    margin-left: -10px
+    margin-top: -10px
+
+/* Footer styling:
+
+footer
+  margin-bottom: 30px
+  text-align: center
+  font-size: 0.825em
+  p
+    margin-bottom: -2.5em
+    position: relative
+    color: #cccccc
+  a
+    color: #cccccc
+    /* background-color: #213e4a
+    display: block
+    padding: 2px 4px
+    z-index: 100
+    position: relative
+    &:visited
+      color: #cccccc
+      /* background-color: #213e4a
+      display: block
+      padding: 2px 4px
+      z-index: 100
+      position: relative
+    &:hover
+      text-decoration: none
+      background-color: #142830
+    &.by
+      float: left
+    &.up
+      float: right
+
+/* Only used for the demo page at tutorialzine:
+
+#backToTheTut
+  display: inline-block
+  background-color: #F5F5F5
+  border: 1px solid white
+  height: 60px
+  left: -20px
+  padding: 12px 20px 0 40px
+  position: fixed
+  top: 200px
+  width: 380px
+  z-index: 200
+  -moz-border-radius: 4px
+  -webkit-border-radius: 4px
+  border-radius: 4px
+
+.title
+  color: #666666
+  font-size: 2em
+  font-weight: bold
+  text-shadow: 0 1px 1px white
+
+.block
+  margin: 15px 0
+  div
+    float: left
+    margin-right: 5px
+
+.clearfix:after 
+  clear:nboth
+  content: "."
+  display: block
+  height: 0
+  visibility: hidden
+
+.clearfix
+  min-height: 1px
+
+.clear
+  clear: both
+
+#backToTheTut
+  a
+    font-size: 10px
+    text-transform: uppercase
+  img
+    float: left
+    margin-right: 15px
+
+.adsense
+  display:block
+
+textarea#styled
+  font-size: 9px
+  width: 300px
+  height: 100px
+  border: 3px solid #cccccc
+  padding: 5px
+  font-family: Tahoma, sans-serif
+  background-position: bottom right
+  background-repeat: no-repeat
+
